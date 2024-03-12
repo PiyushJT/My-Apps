@@ -35,6 +35,7 @@ body{
     font-size: 22px;
     text-decoration: none;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center ;
 }
