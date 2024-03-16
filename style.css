@@ -7,7 +7,7 @@ body{
 }
 
 .appList{
-    width: 100vw;
+    width: 98vw;
     list-style: none;
     display: flex;
     padding: 0px;
