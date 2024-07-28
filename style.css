@@ -16,10 +16,21 @@ body{
     align-items: center;
 }
 
-.appItem{
+.appItemSlate{
     width: 80vw;
     min-height: 10vh;
     background-color: #E77E5F;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.appItemTodo{
+    width: 80vw;
+    min-height: 10vh;
+    background-color: #4A3780;
     border-radius: 20px;
     margin: 10px;
     display: flex;
@@ -42,4 +53,8 @@ body{
 
 #slate{
     background-color: #E77E5F;
+}
+
+#todo{
+    background-color: #4A3780;
 }
