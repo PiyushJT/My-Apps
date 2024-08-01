@@ -1,13 +1,28 @@
-*{
-    margin: 0px;
+* {
+    margin: 0;
 }
 
-body{
-    background-color: black;
+.bg{
+    position: fixed;
+    float: left;
+    clear: both;
+    width: 99.5vw;
+    height: 99vh;
+    z-index: -2;
+    left: no-repeat;
 }
 
-.appList{
-    width: 98vw;
+.bg1{
+    position: fixed;
+    float: left;
+    clear: both;
+    width: 99.5vw;
+    height: 99vh;
+    z-index: -1;
+    left: no-repeat;
+}
+
+.appList {
     list-style: none;
     display: flex;
     padding: 0px;
@@ -16,10 +31,9 @@ body{
     align-items: center;
 }
 
-.appItemSlate{
+.appItemSlate, .appItemTodo, .appItemIcalc {
     width: 80vw;
     min-height: 10vh;
-    background-color: #E77E5F;
     border-radius: 20px;
     margin: 10px;
     display: flex;
@@ -27,49 +41,55 @@ body{
     justify-content: center;
 }
 
-.appItemTodo{
-    width: 80vw;
-    min-height: 10vh;
-    background-color: #4A3780;
-    border-radius: 20px;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.appItemSlate {
+    background-color: #e77f5fc9;
+    border: 5px solid #e77f5f;
 }
 
-.appItemIcalc{
-    width: 80vw;
-    min-height: 10vh;
-    background-color: #F89F15;
-    border-radius: 20px;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.appItemTodo {
+    background-color: #4A3780c9;
+    border: 5px solid #4A3780;
 }
 
-.appItemLink{
-    width: 80vw;
+.appItemIcalc {
+    background-color: #F89F15c9;
+    border: 5px solid #F89F15;
+}
+
+.appItemLink {
+    width: 100%;
     min-height: 10vh;
-    padding: 10px;
-    color: black;
-    font-size: 22px;
+    font-size: 32px;
+    font-family: "Tomorrow", cursive;
     text-decoration: none;
     display: flex;
     text-align: center;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
 }
 
-#slate{
-    background-color: #E77E5F;
+.linkSlate {
+    color: black;
 }
 
-#todo{
-    background-color: #4A3780;
+.linkTodo {
+    color: white;
 }
 
-#icalc{
-    background-color: #F89F15;
+.linkIcalc {
+    color: black;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .appList {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .appItemSlate, .appItemTodo, .appItemIcalc, .appItemLink {
+        width: 30vw;
+        min-height: 35vh;
+    }
 }
