@@ -38,6 +38,17 @@ body{
     justify-content: center;
 }
 
+.appItemIcalc{
+    width: 80vw;
+    min-height: 10vh;
+    background-color: #F89F15;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .appItemLink{
     width: 80vw;
     min-height: 10vh;
@@ -57,4 +68,8 @@ body{
 
 #todo{
     background-color: #4A3780;
+}
+
+#icalc{
+    background-color: #F89F15;
 }
