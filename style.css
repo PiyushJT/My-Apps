@@ -60,7 +60,7 @@
     width: 100%;
     min-height: 10vh;
     font-size: 32px;
-    font-family: "Tomorrow", cursive;
+    font-family: "Tomorrow";
     text-decoration: none;
     display: flex;
     text-align: center;
@@ -79,6 +79,34 @@
 .linkIcalc {
     color: black;
 }
+
+
+.sourceCode {
+    width: 80vw;
+    min-height: 10vh;
+    border-radius: 20px;
+    margin: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9900ff54;
+    border: 5px solid #9900ff;
+}
+
+
+.sourceCodeLink {
+    width: 100%;
+    min-height: 10vh;
+    font-size: 32px;
+    font-family: "Signika Negative", sans-serif;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: lime;
+}
+
 
 /* Responsive Design */
 @media (min-width: 768px) {
